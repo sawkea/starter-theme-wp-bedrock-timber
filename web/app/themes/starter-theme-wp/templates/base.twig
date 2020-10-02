@@ -1,13 +1,7 @@
-{% block html_head_container %}
-
-{% include 'html-header.twig' %}
-	{% block head %}
-	{% endblock %}
-	</head>
-{% endblock %}
+{{ include('html-header.twig') }}
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header" >
+		<header class="header bg-light" >
 			{% block header %}
 					<nav id="nav-main" class="nav-main" role="navigation">
 						{% include "menu.twig" with {'items': menu.get_items} %}
@@ -23,7 +17,6 @@
 			<footer id="footer">
 				<div>{% include 'footer.twig' %}</div>
 			</footer>
-			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>
 </html>
