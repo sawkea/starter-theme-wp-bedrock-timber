@@ -1,9 +1,26 @@
 /*
- * Theme Name: My Timber Starter Theme
- * Description: Starter Theme to use with Timber
- * Author: Upstatement and YOU!
+ * Theme Name: My Starter Theme
+ * Description: Starter Theme avec timber et bedrock
+ * Author: Sonia Hoareau
 */
+body, html {
+  height: 100%;
+}
+
+.viewer-height-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100% !important;
+}
+
 #footer {
+  width: 100%;
+  bottom: 0;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }

@@ -1,0 +1,24 @@
+/*
+ * Theme Name: My Starter Theme
+ * Description: Starter Theme avec timber et bedrock
+ * Author: Sonia Hoareau
+*/
+header {
+  background-color: #d8d8d8;
+  height: 3rem;
+}
+
+header .nav-main ul {
+  margin-bottom: 0;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+header .nav-main ul li {
+  display: inline-block;
+}
+
+header .nav-main ul li a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=menu.css.map */

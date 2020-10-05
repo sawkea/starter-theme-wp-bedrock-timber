@@ -1,22 +1,30 @@
-{{ include('html-header.twig') }}
+<head>
+	{{ include('html-header.twig') }}
+	{% block styleContact %}
+		<link rel="stylesheet" href="{{ site.theme.link }}/styles/menu.css" type="text/css" media="screen" />
+    {% endblock styleContact %}
+</head>
+
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header bg-light" >
+		<header class="header d-flex align-items-center justify-content-end fixed-top">
 			{% block header %}
-					<nav id="nav-main" class="nav-main" role="navigation">
+					<nav id="nav-main" class="nav-main " role="navigation">
 						{% include "menu.twig" with {'items': menu.get_items} %}
-					</nav><!-- #nav -->
+					</nav>
 				</div>
 			{% endblock %}
 		</header>
-		{% block content %}
-			
-		{% endblock content %}
-
-		{% block footer %}
-			<footer id="footer">
-				<div>{% include 'footer.twig' %}</div>
-			</footer>
-		{% endblock %}
+		<div class="viewer-height-content d-flex">
+			{% block content %}
+				
+			{% endblock content %}
+	
+			{% block footer %}
+				<footer id="footer">
+					<div>{% include 'footer.twig' %}</div>
+				</footer>
+			{% endblock %}
+		</div>
 	</body>
 </html>
