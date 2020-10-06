@@ -38,4 +38,8 @@ body, html {
   text-transform: uppercase;
   padding-right: 4rem;
 }
+
+.card {
+  width: 25rem;
+}
 /*# sourceMappingURL=style.css.map */
