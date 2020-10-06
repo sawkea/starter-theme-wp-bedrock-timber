@@ -7,7 +7,7 @@
 
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header d-flex align-items-center justify-content-end fixed-top">
+		<header class="header d-flex align-items-center justify-content-end sticky-top text-center">
 			{% block header %}
 					<nav id="nav-main" class="nav-main " role="navigation">
 						{% include "menu.twig" with {'items': menu.get_items} %}
